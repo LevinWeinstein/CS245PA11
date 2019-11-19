@@ -2,11 +2,11 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-public class AdjacencyMatrixGraph {
+public class Judge {
 
     private int[][] adjacencyMatrix;
 
-    public AdjacencyMatrixGraph(int peopleInTown, int [][] trust){
+    public Judge(int peopleInTown, int [][] trust){
         adjacencyMatrix = new int[peopleInTown][peopleInTown];
 
         for (int[] edge : trust){
