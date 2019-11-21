@@ -13,8 +13,10 @@ public class Judge {
         int trustCount[] = new int [N];
 
         for (int[] edge : trust){
-            trustful[edge[0] - 1] = true;
-            ++trustCount[edge[1] - 1];
+            if (Math.min(edge[0], edge[1]) >= 1 && Math.max(edge[0], edge[1]) <= N) {
+                trustful[edge[0] - 1] = true;
+                ++trustCount[edge[1] - 1];
+            }
         }
 
         int firstSolution = -1;
